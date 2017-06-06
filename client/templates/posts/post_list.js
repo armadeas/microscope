@@ -15,5 +15,7 @@ var postData = [
 	url: 'http://cms.ptcs.co.id'
 }];
 Template.postList.helpers({
-	posts: postData
+	posts: function () {
+		return Posts.find();
+	}
 });
